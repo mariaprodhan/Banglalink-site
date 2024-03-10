@@ -1,0 +1,64 @@
+.color-switcher {
+    width: 130px;
+    height: 50px;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 45%;
+    left: -88px;
+    border: 1px solid #FEC600;
+    z-index: 999;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.slide{
+    left: 0px;
+}
+
+.color-switcher .dark i {
+    color: rgba(216, 137, 195, 0.987);
+    font-size: 30px;
+    cursor: pointer;
+}
+.color-switcher .green i {
+    color: rgb(239, 141, 117);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.color-switcher .red i {
+    color: rgb(136, 83, 83);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.color-switcher .switch i {
+    color: #ff5d22;
+    font-size: 30px;
+    cursor: pointer;
+    animation: round 2s infinite alternate;
+    -webkit-animation: round 2s infinite alternate;
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
